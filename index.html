@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container py-5 d-flex justify-content-center flex-column">
+        <!-- main head -->
+        <div class="text-center">
+            <h1 class="py-4 text-center">Bookmarker</h1>
+        </div>
+        <div class="my-form py-3 mt-2">
+            <!-- second head -->
+            <h2 class="text-center">
+                <i class="fa-solid fa-book-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-book-bookmark"></i>
+            </h2>
+            <!-- name-input -->
+            <div class="mb-4">
+                <label for="siteName" class="form-label fw-bold"><i class="fa-solid fa-book fa-book-bookmark pe-2"></i>Site Name</label>
+                <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+            </div>
+            <!-- url input -->
+            <div class="mb-4">
+                <label for="siteUrl" class="form-label fw-bold"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+            </div>
+            <!-- submit btn -->
+            <div class="submitBtn text-center">
+                <button onclick="addSite()" class="btn btn-submit px-5  btn-danger" id="submitBtn">Submit</button>
+            </div>
+        </div>
+        <table  class="table mt-5 text-center align-middle">
+            <thead>
+                <th>index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
