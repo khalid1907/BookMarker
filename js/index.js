@@ -3,6 +3,7 @@ var siteUrlInput = document.getElementById("siteUrl");
 var sites = [];
 var siteNames = [];
 
+
 window.onload = function () {
     if (localStorage.getItem("sites")) {
         sites = JSON.parse(localStorage.getItem("sites"));
